@@ -1,0 +1,13 @@
+.title {
+    text-align: center; 
+    font-weight: bold;
+    padding-top: 16px;
+}
+
+.det {
+    font-size: 20px;
+}
+
+.bold {
+    font-weight: bold;
+}

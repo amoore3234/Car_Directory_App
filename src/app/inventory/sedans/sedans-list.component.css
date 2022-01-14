@@ -1,0 +1,13 @@
+.input {
+    padding-top: 16px;
+}
+
+.content {
+    padding-top: 16px;
+}
+
+.paginator {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}

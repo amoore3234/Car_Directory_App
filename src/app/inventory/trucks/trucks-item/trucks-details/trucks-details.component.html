@@ -1,0 +1,19 @@
+<h1 class="title">
+    {{inventory.carYear}} {{inventory.carModel}} {{inventory.carName}}
+</h1>
+<div class="container">
+    <div class="row">
+        <div class="col-12" style="text-align: center;">
+            <img class="img-fluid" src="assets/media/{{ inventory.vin }}.png" alt="Card image cap" width="850"
+                height="740">
+        </div>
+        <div class="col-lg-6" class="det">
+            <p><span class="bold">Vin:</span> {{inventory.vin}}</p>
+            <p><span class="bold">Exterior:</span> {{inventory.carExterior}}</p>
+            <p><span class="bold">Interior:</span> {{inventory.carInterior }}</p>
+            <p><span class="bold">Location:</span> {{inventory.carLocation}}</p>
+            <p><span class="bold">Price:</span> {{inventory.price | currency}}</p>
+        </div>
+    </div>
+
+</div>

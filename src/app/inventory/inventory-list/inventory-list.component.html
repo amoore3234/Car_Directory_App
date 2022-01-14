@@ -1,0 +1,19 @@
+<div class="input">
+    <input class="form-control me-2" #myInput type="text" placeholder="Search inventory..." [(ngModel)]="carName"
+        (ngModelChange)="search()">
+</div>
+
+<div class="content" fxLayout="row wrap" fxLayoutGap="16px grid">
+    <app-inventory-item fxFlex="25%" fxFlex.xs="100%" fxFlex.sm="50%" fxFlex.md="33%" *ngFor="let inventoryEl of inventory | paginate : {
+            itemsPerPage: itemsPerPage,
+            currentPage: currentPage,
+            totalItems: totalItems
+        }; let i = index" [inventory]="inventoryEl" [index]="i + ((currentPage - 1) * itemsPerPage)"
+        [itemsPerPage]="itemsPerPage" [currentPage]="currentPage" [totalItems]="totalItems">
+    </app-inventory-item>
+</div>
+
+<div class="paginator">
+    <pagination-controls class="pagi" (pageChange)="getPages(currentPage = $event)">
+    </pagination-controls>
+</div>

@@ -1,0 +1,16 @@
+.input {
+    padding-top:16px;
+}
+.content {
+    padding-top: 16px;
+}
+
+.paginator {
+    /* display: block;
+    border: 1px solid black;
+    position: relative;
+    top: 50px; */
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}

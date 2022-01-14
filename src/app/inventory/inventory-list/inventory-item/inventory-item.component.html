@@ -1,0 +1,10 @@
+<mat-card class="mat-elevation-z4">
+    <a class="link" [routerLink]="['/details', index]">
+        <img class="img-fluid" src="assets/media/{{ inventory.vin }}.png" alt="Card image cap" width="350" height="240">
+        <mat-card-content>
+            <div class="titles">{{inventory.carYear }} {{ inventory.carModel
+                }} {{ inventory.carName }}</div>
+            <p><span class="titles">Price:</span> {{ inventory.price | currency}}</p>
+        </mat-card-content>
+    </a>
+</mat-card>
